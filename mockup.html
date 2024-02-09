@@ -1,0 +1,434 @@
+<!DOCTYPE html html(lang='eng' )>
+
+<head>
+    <title>mockup-job-top-sheet</title>
+    <style>
+        @page {
+            size: 8.5in 11in portrait;
+        }
+
+        .first-order-flexbox {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+
+        }
+
+        /* .order-information {
+            display:flex;
+            flex-direction: column;
+        } */
+
+        .data {
+            width: 150%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            text-transform: uppercase;
+            font-size: 0.2em;
+            text-align: left;
+            line-height: 10%;
+            margin-top: 5px;
+        }
+
+        table {
+            display: flex;
+            width: fit-content;
+            /* border: 2px solid black;
+            border-radius: 5px; */
+            margin: auto;
+            /* background-color: #072a4d; */
+            background-color: white;
+            margin-top: 10px;
+        }
+
+        td {
+            font-family: 'labil grotesk', Arial, Helvetica, sans-serif;
+            text-transform: uppercase;
+            font-size: 0.5em;
+            text-align: center;
+            line-height: 2.0em;
+            padding: 0px 10px 0px 10px;
+        }
+
+        tr {
+            background-color: white;
+        }
+
+        th {
+            font-family: 'labil grotesk', Arial, Helvetica, sans-serif;
+            text-transform: uppercase;
+            font-size: 0.5em;
+            text-align: center;
+            padding: 6px;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #DDDDDD;
+        }
+
+        tr:first-child {
+            background-color: #072a4d;
+            color: white;
+        }
+
+        tr:hover {
+            background-color: #008cf3;
+        }
+
+        .identifier {
+            font-weight: bold;
+        }
+
+        .priority {
+            color: black;
+            /* color:red; */
+        }
+
+        h1 {
+            font-family: 'Labil Grotesk', Arial, Helvetica, sans-serif;
+            font-size: 3.5em;
+            font-weight: 900;
+            text-align: right;
+            margin-top: 0px;
+            margin-bottom: -2px;
+            line-height: 82%;
+            text-shadow:
+                5px 5px 0 #ffffff,
+                -5px 5px 0 #ffffff,
+                -5px -5px 0 #ffffff,
+                7px -7px 0 #ffffff;
+        }
+
+        qrcode {
+            font-size: xx-small;
+            width: 30px;
+        }
+
+        hr {
+            border: 3px solid black;
+            width: 99%;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="first-order-flexbox">
+        <div class="order-information">
+            <div class="data" id="job-id">
+                <p class="identifier">Job-ID:</p>
+                <p class="content">3a219374-f7af-4232-a65e-64aa9f254f6e</p>
+            </div>
+            <div class="data" id="date-range">
+                <p class="identifier">date range:</p>
+                <p class="content">11/25/2022-11/30/2022</p>
+            </div>
+            <div class="data" id="printer-user">
+                <p class="identifier">printed by:</p>
+                <p class="content">James Bond</p>
+            </div>
+            <div class="data" id="printer-device">
+                <p class="identifier">printer:</p>
+                <p class="content">Mary-Kate</p>
+            </div>
+            <!-- <div class="data" id="barcode">
+                <p class="identifier">barcode:</p>
+                <div class="content">010100101010100110</div>
+            </div> -->
+        </div>
+        <div class="job-order-type priority">
+            <h1 class="stroke-behind">Incentive/OTK</h1>
+        </div>
+    </div>
+    <hr>
+    <!-- <div class="first-order-flexbox"> -->
+        <table>
+            <tr>
+                <th>
+                    order id
+                </th>
+                <th>
+                    sales order #
+                </th>
+                <th>
+                    fund id
+                </th>
+                <th>
+                    fundraiser name
+                </th>
+                <th>
+                    placed date
+                </th>
+                <th>
+                    logo script
+                </th>
+                <th>
+                    primary
+                </th>
+                <th>
+                    secondary
+                </th>
+                <th>
+                    logo id
+                </th>
+                <th>
+                    d
+                </th>
+                <th>
+                    ds
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    19794425
+                </td>
+                <td>
+                    SO102040
+                </td>
+                <td>
+                    204779
+                </td>
+                <td>
+                    Colonel Richardson Wrestling
+                </td>
+                <td>
+                    12/28/2023 4:23 am
+                </td>
+                <td>
+                    
+                </td>
+                <td>
+                    Red #ed1c24
+                </td>
+                <td>
+                    Black #0c0c10
+                </td>
+                <td>
+                    custom
+                </td>
+                <td>
+                    13
+                </td>
+                <td>
+                    0 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    19794425
+                </td>
+                <td>
+                    SO102040
+                </td>
+                <td>
+                    204779
+                </td>
+                <td>
+                    Colonel Richardson Wrestling
+                </td>
+                <td>
+                    12/28/2023 4:23 am
+                </td>
+                <td>
+                    
+                </td>
+                <td>
+                    Red #ed1c24
+                </td>
+                <td>
+                    Black #0c0c10
+                </td>
+                <td>
+                    custom
+                </td>
+                <td>
+                    13
+                </td>
+                <td>
+                    0 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    19794425
+                </td>
+                <td>
+                    SO102040
+                </td>
+                <td>
+                    204779
+                </td>
+                <td>
+                    Colonel Richardson Wrestling
+                </td>
+                <td>
+                    12/28/2023 4:23 am
+                </td>
+                <td>
+                    
+                </td>
+                <td>
+                    Red #ed1c24
+                </td>
+                <td>
+                    Black #0c0c10
+                </td>
+                <td>
+                    custom
+                </td>
+                <td>
+                    13
+                </td>
+                <td>
+                    0 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    19794425
+                </td>
+                <td>
+                    SO102040
+                </td>
+                <td>
+                    204779
+                </td>
+                <td>
+                    Colonel Richardson Wrestling
+                </td>
+                <td>
+                    12/28/2023 4:23 am
+                </td>
+                <td>
+                    
+                </td>
+                <td>
+                    Red #ed1c24
+                </td>
+                <td>
+                    Black #0c0c10
+                </td>
+                <td>
+                    custom
+                </td>
+                <td>
+                    13
+                </td>
+                <td>
+                    0 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    19794425
+                </td>
+                <td>
+                    SO102040
+                </td>
+                <td>
+                    204779
+                </td>
+                <td>
+                    Colonel Richardson Wrestling
+                </td>
+                <td>
+                    12/28/2023 4:23 am
+                </td>
+                <td>
+                    
+                </td>
+                <td>
+                    Red #ed1c24
+                </td>
+                <td>
+                    Black #0c0c10
+                </td>
+                <td>
+                    custom
+                </td>
+                <td>
+                    13
+                </td>
+                <td>
+                    0 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    19794425
+                </td>
+                <td>
+                    SO102040
+                </td>
+                <td>
+                    204779
+                </td>
+                <td>
+                    Colonel Richardson Wrestling
+                </td>
+                <td>
+                    12/28/2023 4:23 am
+                </td>
+                <td>
+                    
+                </td>
+                <td>
+                    Red #ed1c24
+                </td>
+                <td>
+                    Black #0c0c10
+                </td>
+                <td>
+                    custom
+                </td>
+                <td>
+                    13
+                </td>
+                <td>
+                    0 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    19794425
+                </td>
+                <td>
+                    SO102040
+                </td>
+                <td>
+                    204779
+                </td>
+                <td>
+                    Colonel Richardson Wrestling
+                </td>
+                <td>
+                    12/28/2023 4:23 am
+                </td>
+                <td>
+                    
+                </td>
+                <td>
+                    Red #ed1c24
+                </td>
+                <td>
+                    Black #0c0c10
+                </td>
+                <td>
+                    custom
+                </td>
+                <td>
+                    13
+                </td>
+                <td>
+                    0 
+                </td>
+            </tr>
+        </table>
+    <!-- </div> -->
+</body>

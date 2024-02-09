@@ -1,0 +1,16 @@
+{
+  "name": "job-top-sheet",
+  "version": "1.0.0",
+  "description": "A js applet that takes inbound info and creates a PDF with job information.",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest app.js"
+  },
+  "author": "George Pastushok",
+  "license": "ISC",
+  "dependencies": {
+    "handlebars": "^4.7.8",
+    "lodash": "^4.17.21",
+    "puppeteer": "^20.3.0"
+  }
+}
