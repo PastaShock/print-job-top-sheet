@@ -25,8 +25,11 @@ const DateCurrent = args.dateCurrent;
 const User = args.user;
 const Printer = args.printer;
 const OrderType = args.orderType;
+const priority = args.priority;
 
 const ordersJSON = fs.readFileSync(workingDir + 'temp.json');
+
+console.log(`orderJSON.length: ${ordersJSON.length}`)
 
 // define the HTML template to use for the header:
 footerHTML = `
@@ -80,9 +83,11 @@ const file = { url: workingDir + "temp.html" };
 //compile the source code
 const compiledFunction = pug.compileFile(workingDir + "template.pug");
 
-const promiseA = new Promise((resolve, reject) => {
-	console.log('ordersJSON length: '+ JSON.parse(ordersJSON).length)
+orders = JSON.parse(ordersJSON);
+console.log(`orders.orderId: ${JSON.stringify(orders)}`)
+return
 
+const promiseA = new Promise((resolve, reject) => {
 	fs.writeFile(workingDir + "temp.html",
 		compiledFunction({
 			orders: JSON.parse(ordersJSON),
@@ -91,7 +96,8 @@ const promiseA = new Promise((resolve, reject) => {
 			dateCurrent: DateCurrent,
 			user: User,
 			printer: Printer,
-			orderType: OrderType
+			orderType: OrderType,
+			priority: priority
 			// QuickCode: qrcodePath
 		}),
 		'utf-8',
