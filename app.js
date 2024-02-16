@@ -27,9 +27,12 @@ const Printer = args.printer;
 const OrderType = args.orderType;
 const priority = args.priority;
 
-const ordersJSON = fs.readFileSync(workingDir + 'temp.json');
+var ordersJSON = fs.readFileSync(workingDir + 'temp.json');
 
-console.log(`orderJSON.length: ${ordersJSON.length}`)
+// check if the ordersJSON is an array:
+if (!Array.isArray(JSON.parse(ordersJSON))) {
+	ordersJSON = `[${ordersJSON}]`;
+}
 
 // define the HTML template to use for the header:
 footerHTML = `
@@ -82,10 +85,6 @@ const file = { url: workingDir + "temp.html" };
 
 //compile the source code
 const compiledFunction = pug.compileFile(workingDir + "template.pug");
-
-orders = JSON.parse(ordersJSON);
-console.log(`orders.orderId: ${JSON.stringify(orders)}`)
-return
 
 const promiseA = new Promise((resolve, reject) => {
 	fs.writeFile(workingDir + "temp.html",

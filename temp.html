@@ -1,4 +1,4 @@
-<!DOCTYPE html html(lang='eng')><head><title>job-header</title><style>@media print {
+<!DOCTYPE html html(lang='eng')><head><title>job-top-sheet</title><style>@media print {
     @page {
         size: 8.5in 11in landscape;
     }
@@ -29,7 +29,7 @@ p {
     text-transform: uppercase;
     font-size: 0.6em;
     text-align: left;
-    line-height: 120%;
+    line-height: 110%;
     margin: 0;
 }
 
@@ -66,6 +66,10 @@ tr {
     background-color: white;
 }
 
+tr:nth-child(odd) {
+    background-color: #DDDDDD;
+}
+
 tr, td {
     page-break-inside: avoid;
 }
@@ -82,17 +86,13 @@ thead {
     display: table-header-group;
 }
 
-tbody tr:nth-child(odd) {
-    background-color: #DDDDDD;
+tr:hover {
+    background-color: #008cf3;
 }
 
 thead th {
     background-color: #072a4d;
     color: white;
-}
-
-tr:hover {
-    background-color: #008cf3;
 }
 
 .identifier {
@@ -132,4 +132,7 @@ hr {
 img {
     max-width: 10em;
     max-height: 5em;
-}</style></head><body><div class="first-order-flexbox"><div class="order-information"><div class="data" id="job-id"><p class="identifier">job-id</p><p class="content">b0a1821f-5694-4919-8ced-1561ff147420</p></div><div class="data" id="date-range"><p class="identifier">placed</p><p class="content">1/9/2024 4:25 am - 1/9/2024 4:25 am</p></div><div class="data" id="date-current"><p class="identifier">printed</p><p class="content">02/12/2024 09:09:47</p></div><div class="data" id="printer-user"><p class="identifier">print-user</p><p class="content">George Pastushok</p></div><div class="data" id="printer-device"><p class="identifier">printer</p><p class="content">Mary-Kate[a]</p></div></div><div class="job-order-type priority"><h1 style="color: black;">Incentive/OTK</h1></div></div><hr/><table><thead><tr><th>order id </th><th>sales order #</th><th>fund id </th><th>fundraiser name </th><th>placed date </th><th>logo preview</th><th>logo script </th><th>primary </th><th>secondary </th><th>logo id </th><th>d </th><th>ds</th></tr></thead><tbody><tr> <td>20001759</td><td>SO103681</td><td>205441</td><td>Matrix Boys Volleyball 16U Black 2023</td><td>1/9/2024 4:25 am</td><td><img src="https://snapraiselogos.s3.us-west-1.amazonaws.com/PrinterLogos/205441_d.png" alt="" srcset=""/></td><td></td><td class="color" style="background-color:#0C0C10">Black </td><td class="color" style="background-color:#055E35">Dark Green </td><td>Custom</td><td>2</td><td></td></tr><tr> <td>20001760</td><td>SO103683</td><td>205433</td><td>Matrix Boys Volleyball 18 Green 2023</td><td>1/9/2024 4:25 am</td><td><img src="https://snapraiselogos.s3.us-west-1.amazonaws.com/PrinterLogos/205433_d.png" alt="" srcset=""/></td><td></td><td class="color" style="background-color:#00A651">Green </td><td class="color" style="background-color:#00A651">Green </td><td>Custom</td><td>1</td><td></td></tr><tr> <td>20001761</td><td>SO103684</td><td>205435</td><td>Matrix Boys Volleyball 18U Black 2023</td><td>1/9/2024 4:25 am</td><td><img src="https://snapraiselogos.s3.us-west-1.amazonaws.com/PrinterLogos/205435_d.png" alt="" srcset=""/></td><td></td><td class="color" style="background-color:#0C0C10">Black </td><td class="color" style="background-color:#00A651">Green </td><td>Custom</td><td>1</td><td></td></tr><tr> <td>20001886</td><td>SO103677</td><td>182974</td><td>Escondido Charter HS Girls Soccer</td><td>1/9/2024 4:25 am</td><td><img src="https://snapraiselogos.s3.us-west-1.amazonaws.com/PrinterLogos/182974_d.png" alt="" srcset=""/></td><td>ECHS| Soccer</td><td class="color" style="background-color:#990000">Maroon </td><td class="color" style="background-color:#FFFFFF">White </td><td>72</td><td>8</td><td>1</td></tr><tr> <td>20001887</td><td>SO103678</td><td>185192</td><td>2024 Long Beach Wilson HS Boys Volleyballl</td><td>1/9/2024 4:25 am</td><td><img src="https://snapraiselogos.s3.us-west-1.amazonaws.com/PrinterLogos/185192_d.png" alt="" srcset=""/></td><td></td><td class="color" style="background-color:#C4161C">Cardinal </td><td class="color" style="background-color:#EBBA30">Athletic Gold </td><td>Custom</td><td>6</td><td>2</td></tr><tr> <td>20001888</td><td>SO103679</td><td>205439</td><td>Matrix Boys Volleyball 16U Mayhem 2023</td><td>1/9/2024 4:25 am</td><td><img src="https://snapraiselogos.s3.us-west-1.amazonaws.com/PrinterLogos/205439_d.png" alt="" srcset=""/></td><td></td><td class="color" style="background-color:#0C0C10">Black </td><td class="color" style="background-color:#055E35">Dark Green </td><td>Custom</td><td>1</td><td></td></tr><tr> <td>20001889</td><td>SO103680</td><td>202420</td><td>Albany Cougars Boys Soccer '23</td><td>1/9/2024 4:25 am</td><td><img src="https://snapraiselogos.s3.us-west-1.amazonaws.com/PrinterLogos/202420_d.png" alt="" srcset=""/></td><td></td><td class="color" style="background-color:#ED1C24">Red </td><td class="color" style="background-color:#0C0C10">Black </td><td>Custom</td><td>6</td><td>1</td></tr></tbody></table></body>
+}</style><script>function openNewTab(orderId) {
+    let URL = "https://4766534.app.netsuite.com/app/accounting/transactions/salesord.nl?id="+orderId;
+    window.open(URL)
+}</script></head><body><div class="first-order-flexbox"><div class="order-information"><div class="data" id="job-id"><p class="identifier">job-id</p><p class="content">f76142d6-d082-4450-81ce-b4bc02c81298</p></div><div class="data" id="date-range"><p class="identifier">placed</p><p class="content">2/15/2024 3:37 PM - 2/16/2024 4:05 AM</p></div><div class="data" id="date-current"><p class="identifier">printed</p><p class="content">02/16/2024 12:05:41</p></div><div class="data" id="printer-user"><p class="identifier">print-user</p><p class="content">George Pastushok</p></div><div class="data" id="printer-device"><p class="identifier">printer</p><p class="content">Nicole[A]</p></div></div><div class="job-order-type priority"><h1 style="color: red;">Reorders</h1></div></div><hr/><table><thead><tr><th>order id </th><th>sales order #</th><th>fund id </th><th>fundraiser name </th><th>placed date </th><th>logo preview</th><th>logo script </th><th>primary </th><th>secondary </th><th>logo id </th><th>d </th><th>ds</th></tr></thead><tbody><tr onclick="openNewTab('20925423')"><td>20925423</td><td>SO107292</td><td>192229</td><td>Lawrence High School Girls Soccer</td><td>2/15/2024 3:37 pm</td><td><img src="https://snapraiselogos.s3.us-west-1.amazonaws.com/PrinterLogos/192229_d.png" alt="" srcset=""/></td><td>Lawrence|Soccer</td><td class="color" style="background-color:#0D3267">Navy </td><td class="color" style="background-color:#D2AA41">Vegas Gold </td><td>72</td><td>3</td><td></td></tr><tr onclick="openNewTab('20927751')"><td>20927751</td><td>SO107313</td><td>201430</td><td>Skyline Eagles Basketball</td><td>2/15/2024 4:46 pm</td><td><img src="https://snapraiselogos.s3.us-west-1.amazonaws.com/PrinterLogos/201430_d.png" alt="" srcset=""/></td><td>Skyline|Basketball</td><td class="color" style="background-color:#0D3267">Navy </td><td class="color" style="background-color:#D2AA41">Vegas Gold </td><td>52</td><td>1</td><td></td></tr><tr onclick="openNewTab('20934481')"><td>20934481</td><td>SO107322</td><td>189884</td><td>Sarasota Middle School Band 2023</td><td>2/16/2024 4:05 am</td><td><img src="https://snapraiselogos.s3.us-west-1.amazonaws.com/PrinterLogos/189884_d.png" alt="" srcset=""/></td><td>Panthers|BAND 2023</td><td class="color" style="background-color:#006AB6">Royal Blue </td><td class="color" style="background-color:#0C0C10">Black </td><td>64</td><td></td><td></td></tr></tbody></table></body>

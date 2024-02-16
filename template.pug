@@ -3,6 +3,8 @@ head
     title job-top-sheet
     style
         include stylesheet.css
+    script
+        include script.js
 body
     div(class='first-order-flexbox')
         div(class='order-information')
@@ -47,7 +49,7 @@ body
                 th ds
         tbody
             each order in orders
-                tr 
+                tr(onclick='openNewTab(\'' + order.orderId + '\')')
                     td #{order.orderId}
                     td #{order.salesOrder}
                     td #{order.fundId}
