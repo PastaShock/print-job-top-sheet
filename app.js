@@ -5,15 +5,16 @@ const pug = require('pug');
 const minimist = require('minimist');
 const htmlpdf = require('html-pdf-node');
 const hb = require('handlebars');
-// will delete the line below
-// line below should be re-defined to include a guid for the filename
-// const filepath = 'C:\\ps\\label_temp - Copy\\temp.pdf'
+const dayjs = require('dayjs');
+
 const workingDir = 'C:\\ps\\job-top-sheet\\'
 const fs = require('fs');
 // will keep QR code in the code to potentially add a qr code to the job header
 // const QRCode = require('qrcode');
 // keep
 // const qrcodePath = "C:\\ps\\label_temp\\qrcode.txt";
+
+dayjs().format();
 
 var args = minimist(process.argv.slice(1), {
 	string: ''
@@ -96,8 +97,9 @@ const promiseA = new Promise((resolve, reject) => {
 			user: User,
 			printer: Printer,
 			orderType: OrderType,
-			priority: priority
+			priority: priority,
 			// QuickCode: qrcodePath
+			dayjs: require('dayjs')
 		}),
 		'utf-8',
 		function (err) {

@@ -5,6 +5,7 @@ head
         include stylesheet.css
     script
         include script.js
+
 body
     div(class='first-order-flexbox')
         div(class='order-information')
@@ -49,30 +50,31 @@ body
                 th ds
         tbody
             each order in orders
-                tr(onclick='openNewTab(\'' + order.orderId + '\')')
-                    td #{order.orderId}
-                    td #{order.salesOrder}
-                    td #{order.fundId}
-                    td #{order.fundname}
-                    td #{order.placedDate}
+                tr(onclick='openNewTab(\'' + order.order_id + '\')')
+                    td #{order.order_id}
+                    td #{order.sales_order_id}
+                    td #{order.fundraiser_id}
+                    td #{order.fundraiser_name}
+                    - var placedOnDate = dayjs(order.placed_on_date).format("MM/DD/YYYY")
+                    td #{placedOnDate}
                     td
-                        img(src="https://snapraiselogos.s3.us-west-1.amazonaws.com/PrinterLogos/" + order.fundId + "_d.png", alt="", srcset="")
-                    td #{order.logoScript}
+                        img(src="https://snapraiselogos.s3.us-west-1.amazonaws.com/PrinterLogos/" + order.fundraiser_id + "_d.png", alt="", srcset="")
+                    td #{order.logo_script}
                     - var placeholderColor = 'none #FFFFFF'
-                    if order.priColor
-                        - var primary = order.priColor.split(' ')[order.priColor.split(' ').length - 1]
-                        - var colorName1 = order.priColor.split('#')[0].trim()
+                    if order.primary_color
+                        - var primary = order.primary_color.split(' ')[order.primary_color.split(' ').length - 1]
+                        - var colorName1 = order.primary_color.split('#')[0].trim()
                     else 
                         - var primary =  '#ffffff'
                         - var colorName1 = 'none'
                     td(class="color" style="background-color:"+primary) #{colorName1} 
-                    if order.secColor
-                        - var secondary = order.secColor.split(' ')[order.secColor.split(' ').length - 1]
-                        - var colorName2 = order.secColor.split('#')[0].trim()
+                    if order.secondary_color
+                        - var secondary = order.secondary_color.split(' ')[order.secondary_color.split(' ').length - 1]
+                        - var colorName2 = order.secondary_color.split('#')[0].trim()
                     else 
                         - var secondary = '#ffffff'
                         - var colorName2 = 'none'
                     td(class="color" style="background-color:"+secondary) #{colorName2} 
-                    td #{order.logoId}
-                    td #{order.digital}
-                    td #{order.digiSmall}
+                    td #{order.logo_id}
+                    td #{order.logo_count_digital}
+                    td #{order.logo_count_digital_small}
