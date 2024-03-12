@@ -64,6 +64,7 @@ td {
 
 tr {
     background-color: white;
+    height: 3.5em;
 }
 
 tr:nth-child(odd) {
