@@ -25,6 +25,7 @@ const DateCurrent = args.dateCurrent;
 const User = args.user;
 const Printer = args.printer;
 const OrderType = args.orderType;
+const priority = args.priority;
 
 const ordersJSON = fs.readFileSync(workingDir + 'temp.json');
 
@@ -81,8 +82,6 @@ const file = { url: workingDir + "temp.html" };
 const compiledFunction = pug.compileFile(workingDir + "template.pug");
 
 const promiseA = new Promise((resolve, reject) => {
-	console.log('ordersJSON length: '+ JSON.parse(ordersJSON).length)
-
 	fs.writeFile(workingDir + "temp.html",
 		compiledFunction({
 			orders: JSON.parse(ordersJSON),
@@ -91,7 +90,8 @@ const promiseA = new Promise((resolve, reject) => {
 			dateCurrent: DateCurrent,
 			user: User,
 			printer: Printer,
-			orderType: OrderType
+			orderType: OrderType,
+			priority: priority
 			// QuickCode: qrcodePath
 		}),
 		'utf-8',

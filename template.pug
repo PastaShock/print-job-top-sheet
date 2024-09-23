@@ -25,7 +25,10 @@ body
             //-     p(class='identifier') barcode
             //-     p(class='content') #{barcode}
         div(class='job-order-type priority')
-            h1 #{orderType}
+            if priority
+                h1(style="color: red;") #{orderType}
+            else
+                h1(style="color: black;") #{orderType}
     hr
     table
         thead
