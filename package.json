@@ -9,8 +9,12 @@
   "author": "George Pastushok",
   "license": "ISC",
   "dependencies": {
+    "dayjs": "^1.11.10",
     "handlebars": "^4.7.8",
+    "html-pdf-node": "^1.0.7",
     "lodash": "^4.17.21",
+    "minimist": "^1.2.8",
+    "pug": "^3.0.2",
     "puppeteer": "^20.3.0"
   }
 }

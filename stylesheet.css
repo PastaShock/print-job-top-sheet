@@ -29,7 +29,7 @@ p {
     text-transform: uppercase;
     font-size: 0.6em;
     text-align: left;
-    line-height: 120%;
+    line-height: 110%;
     margin: 0;
 }
 
@@ -64,6 +64,11 @@ td {
 
 tr {
     background-color: white;
+    height: 3.5em;
+}
+
+tr:nth-child(odd) {
+    background-color: #DDDDDD;
 }
 
 tr, td {
@@ -82,17 +87,13 @@ thead {
     display: table-header-group;
 }
 
-tbody tr:nth-child(odd) {
-    background-color: #DDDDDD;
+tr:hover {
+    background-color: #008cf3;
 }
 
 thead th {
     background-color: #072a4d;
     color: white;
-}
-
-tr:hover {
-    background-color: #008cf3;
 }
 
 .identifier {
